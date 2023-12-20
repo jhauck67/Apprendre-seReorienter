@@ -1,3 +1,4 @@
+// ******** PRESENTATION ********
 .presentation {
   width: 80%;
   margin: 0 auto;
@@ -16,7 +17,10 @@
   }
   .img-container {
     grid-area: img;
-    background: url(../../../assets/img/image-title.JPG) center/cover;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
   }
   .paragraph1 {
     grid-area: p1;
@@ -46,6 +50,7 @@
     }
   }
 }
+// ******** LAST ARTICLES ********
 .last-articles {
   width: 80%;
   margin: 0 auto;
@@ -78,22 +83,11 @@
       }
       .resume-view-img {
         width: 200px;
-        margin: 0 auto;
+        margin: auto auto;
         height: 200px;
-        #rv-img1 {
-          width: 100%;
-          height: 100%;
-          background: url(../../../assets/img/bg-header01.jpeg) center;
-        }
-        #rv-img2 {
-          width: 100%;
-          height: 100%;
-          background: url(../../../assets/img/favicon.JPG) center;
-        }
-        #rv-img3 {
-          width: 100%;
-          height: 100%;
-          background: url(../../../assets/img/image-title.JPG) center;
+        img {
+          max-width: 100%;
+          max-height: 100%;
         }
       }
       .resume-view-title {
@@ -111,6 +105,55 @@
         font-size: 1rem;
         padding: 10px 0;
       }
+    }
+  }
+}
+// ******** A PROPOS DE MOI ********
+.a-propos-de-moi {
+  background: $white;
+  width: 80%;
+  margin: 0 auto;
+  padding: 30px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(20% 20% 20% 20% 20%);
+  grid-template-areas:
+    "img p1"
+    "img p2"
+    "img p3"
+    "p4 p4"
+    "con con";
+  @media screen and (max-width: 870px) {
+    display: block;
+    #paragraph-grid {
+      padding-bottom: 20px;
+    }
+  }
+  .paragraph1 {
+    grid-area: p1;
+  }
+  .paragraph2 {
+    grid-area: p2;
+  }
+  .paragraph3 {
+    grid-area: p3;
+  }
+  .img-container {
+    grid-area: img;
+    display: grid;
+    img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+  }
+  .paragraph4 {
+    grid-area: p4;
+  }
+  .conclusion {
+    grid-area: con;
+    a {
+      font-weight: bold;
     }
   }
 }

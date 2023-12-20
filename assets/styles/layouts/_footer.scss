@@ -1,0 +1,39 @@
+footer {
+  padding: 30px;
+  width: 80%;
+  margin: 0 auto;
+  background: $grey-blue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: $light;
+  @media screen and (max-width: 870px) {
+    display: block;
+    text-align: center;
+  }
+  .copyright {
+    color: $white;
+    padding-bottom: 20px;
+  }
+  .mentions-legales {
+    padding-bottom: 20px;
+    a {
+      color: $white;
+      font-weight: bold;
+      padding-bottom: 20px;
+    }
+  }
+
+  .network ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    li {
+      padding: 0 10px;
+      font-size: 1.5rem;
+      i {
+        color: $white;
+      }
+    }
+  }
+}
