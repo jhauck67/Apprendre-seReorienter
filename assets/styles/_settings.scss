@@ -1,0 +1,38 @@
+// ******** FONTS ********
+@font-face {
+  font-family: "Playfair";
+  src: url(../../assets/fonts/PlayfairDisplaySC-Regular.ttf);
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url(../../assets/fonts/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "Lora";
+  src: url(../../assets/fonts/Lora-VariableFont_wght.ttf);
+}
+$title: Playfair, sans-serif;
+$medium: Montserrat, sans-serif;
+$light: Lora, sans-serif;
+
+// ******** COLORS ********
+$white: #eeeeee;
+$black: black;
+$grey-blue: #457995;
+
+// ******** PARAMETERS ********
+body {
+  background: url(../../assets/img/bg-header01.jpeg) center/cover fixed;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
