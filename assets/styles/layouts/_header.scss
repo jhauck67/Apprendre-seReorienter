@@ -23,56 +23,58 @@ header {
       }
     }
   }
-  .navbar {
-    height: 60px;
-    width: 80%;
-    margin: 0 auto;
-    background: rgba(245, 245, 245, 0.5);
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    &:hover li:not(:hover) {
-      background: none;
-      a {
-        color: black;
-      }
-    }
-    ul {
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      height: 100%;
-      li {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 25%;
-        height: 100%;
-        cursor: pointer;
+}
+// .navbar {
+//   height: 60px;
+//   width: 80%;
+//   margin: 0 auto;
+//   background: rgba(245, 245, 245, 0.5);
+//   position: absolute;
+//   bottom: 0;
+//   left: 50%;
+//   transform: translateX(-50%);
+//   &:hover li:not(:hover) {
+//     background: none;
+//     a {
+//       color: black;
+//     }
+//   }
+//   ul {
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-around;
+//     height: 100%;
+//     li {
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       width: 25%;
+//       height: 100%;
+//       cursor: pointer;
 
-        a {
-          text-transform: uppercase;
-          font-weight: bold;
-        }
-        &:first-child {
-          background: rgba(69, 121, 149, 0.5);
-          a {
-            color: $white;
-            transform: scale(1.2);
-          }
-        }
-        &:hover {
-          background: rgba(69, 121, 149, 0.5);
-          a {
-            color: $white;
-            transform: scale(1.2);
-          }
-        }
-      }
-    }
-    @media screen and (max-width: 550px) {
-      width: 100%;
-    }
+//       a {
+//         text-transform: uppercase;
+//         font-weight: bold;
+//       }
+//       &:first-child {
+//         background: rgba(69, 121, 149, 0.5);
+//         a {
+//           color: $white;
+//           transform: scale(1.2);
+//         }
+//       }
+//       &:hover {
+//         background: rgba(69, 121, 149, 0.5);
+//         a {
+//           color: $white;
+//           transform: scale(1.2);
+//         }
+//       }
+//     }
+//   }
+// }
+.navbar {
+  @media screen and (max-width: 550px) {
+    width: 100%;
   }
 }

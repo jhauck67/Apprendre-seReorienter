@@ -74,7 +74,14 @@ header .title .title-container h2 {
   font-size: 2rem;
   text-transform: uppercase;
 }
-header .navbar {
+
+@media screen and (max-width: 550px) {
+  .navbar {
+    width: 100%;
+  }
+}
+
+.navbar {
   height: 60px;
   width: 80%;
   margin: 0 auto;
@@ -85,13 +92,13 @@ header .navbar {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
 }
-header .navbar:hover li:not(:hover) {
+.navbar:hover li:not(:hover) {
   background: none;
 }
-header .navbar:hover li:not(:hover) a {
+.navbar:hover li:not(:hover) a {
   color: black;
 }
-header .navbar ul {
+.navbar ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -102,7 +109,7 @@ header .navbar ul {
       justify-content: space-around;
   height: 100%;
 }
-header .navbar ul li {
+.navbar ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,28 +123,28 @@ header .navbar ul li {
   height: 100%;
   cursor: pointer;
 }
-header .navbar ul li a {
+.navbar ul li a {
   text-transform: uppercase;
   font-weight: bold;
 }
-header .navbar ul li:first-child {
+.navbar ul li:first-child {
   background: rgba(69, 121, 149, 0.5);
 }
-header .navbar ul li:first-child a {
+.navbar ul li:first-child a {
   color: #eeeeee;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
-header .navbar ul li:hover {
+.navbar ul li:hover {
   background: rgba(69, 121, 149, 0.5);
 }
-header .navbar ul li:hover a {
+.navbar ul li:hover a {
   color: #eeeeee;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 @media screen and (max-width: 550px) {
-  header .navbar {
+  .navbar {
     width: 100%;
   }
 }
@@ -155,6 +162,11 @@ header .navbar ul li:hover a {
 @media screen and (max-width: 870px) {
   .presentation {
     display: block;
+  }
+}
+@media screen and (max-width: 550px) {
+  .presentation {
+    width: 100%;
   }
 }
 .presentation .img-container {
@@ -203,6 +215,11 @@ header .navbar ul li:hover a {
   font-size: 2rem;
   text-align: center;
   padding: 20px;
+}
+@media screen and (max-width: 550px) {
+  .last-articles {
+    width: 100%;
+  }
 }
 .last-articles .last-articles-container {
   display: grid;
@@ -279,6 +296,11 @@ header .navbar ul li:hover a {
     padding-bottom: 20px;
   }
 }
+@media screen and (max-width: 550px) {
+  .a-propos-de-moi {
+    width: 100%;
+  }
+}
 .a-propos-de-moi .paragraph1 {
   grid-area: p1;
 }
@@ -328,12 +350,14 @@ footer {
     text-align: center;
   }
 }
-footer .copyright {
-  color: #eeeeee;
-  padding-bottom: 20px;
+@media screen and (max-width: 550px) {
+  footer {
+    width: 100%;
+  }
 }
-footer .mentions-legales {
-  padding-bottom: 20px;
+footer .copyright {
+  text-align: center;
+  color: #eeeeee;
 }
 footer .mentions-legales a {
   color: #eeeeee;
@@ -351,6 +375,9 @@ footer .network ul {
       justify-content: space-around;
 }
 footer .network ul li {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 0 10px;
   font-size: 1.5rem;
 }
