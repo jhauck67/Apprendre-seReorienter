@@ -1,0 +1,107 @@
+@import "../settings";
+@import "./header";
+@import "./footer";
+
+body {
+  background: url(../../../assets/img/bg-header01.jpeg) center/cover fixed;
+}
+// ******** NAVBAR ********
+.navbar {
+  height: 60px;
+  width: 80%;
+  margin: 0 auto;
+  background: rgba(245, 245, 245, 0.5);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  &:hover li:not(:hover) {
+    background: none;
+    a {
+      color: black;
+    }
+  }
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 100%;
+    li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 25%;
+      height: 100%;
+      cursor: pointer;
+
+      a {
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      &:nth-child(3) {
+        background: rgba(69, 121, 149, 0.5);
+        a {
+          color: $white;
+          transform: scale(1.2);
+        }
+      }
+      &:hover {
+        background: rgba(69, 121, 149, 0.5);
+        a {
+          color: $white;
+          transform: scale(1.2);
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 550px) {
+    width: 100%;
+  }
+}
+// ******** A PROPOS ********
+.a-propos {
+  width: 80%;
+  margin: 0 auto;
+  min-height: 84vh;
+  background: rgba(245, 245, 245, 0.75);
+  text-align: center;
+  @media screen and (max-width: 550px) {
+    width: 100%;
+  }
+
+  .a-propos-title h2 {
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-shadow: 3px 3px 5px $grey-blue;
+    position: relative;
+    &::after {
+      content: "";
+      width: 60%;
+      height: 3px;
+      background: $grey-blue;
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  .a-propos-body {
+    padding: 30px;
+
+    h3 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      padding: 10px;
+      text-shadow: 3px 3px 5px $grey-blue;
+    }
+    p {
+      font-size: 1rem;
+      font-family: $light;
+      padding: 10px;
+      text-shadow: 3px 3px 5px $grey-blue;
+    }
+  }
+}

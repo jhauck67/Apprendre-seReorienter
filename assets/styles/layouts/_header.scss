@@ -15,11 +15,13 @@ header {
         font-family: $title;
         font-size: 4rem;
         padding-bottom: 20px;
+        text-shadow: 3px 3px 5px $grey-blue;
       }
       h2 {
         font-family: $medium;
         font-size: 2rem;
         text-transform: uppercase;
+        text-shadow: 3px 3px 5px $grey-blue;
       }
     }
   }

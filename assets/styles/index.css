@@ -68,11 +68,13 @@ header .title .title-container h1 {
   font-family: Playfair, sans-serif;
   font-size: 4rem;
   padding-bottom: 20px;
+  text-shadow: 3px 3px 5px #457995;
 }
 header .title .title-container h2 {
   font-family: Montserrat, sans-serif;
   font-size: 2rem;
   text-transform: uppercase;
+  text-shadow: 3px 3px 5px #457995;
 }
 
 @media screen and (max-width: 550px) {
