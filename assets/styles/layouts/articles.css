@@ -210,4 +210,130 @@ body {
   .navbar {
     width: 100%;
   }
+}
+
+.article {
+  width: 80%;
+  margin: 0 auto;
+  min-height: 84vh;
+  background: rgba(245, 245, 245, 0.75);
+  text-align: center;
+}
+@media screen and (max-width: 550px) {
+  .article {
+    width: 100%;
+  }
+}
+.article h2 {
+  font-family: Montserrat, sans-serif;
+  font-size: 2.5rem;
+  text-shadow: 3px 3px 5px #457995;
+  text-align: center;
+  padding: 30px;
+  position: relative;
+}
+.article h2::after {
+  content: "";
+  width: 60%;
+  height: 3px;
+  background: #457995;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+.article .legend {
+  width: 80%;
+  margin: 0 auto 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.article .legend img {
+  max-width: 50px;
+  max-height: 50px;
+  background: #457995;
+  border: 1px solid black;
+  border-radius: 100px;
+  padding: 5px 7px;
+}
+.article .legend p {
+  padding: 10px;
+  font-family: Lora, sans-serif;
+  font-size: 1rem;
+}
+.article .text-with-image {
+  overflow: hidden;
+  padding-bottom: 20px;
+}
+.article .text-with-image h3 {
+  padding: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
+}
+.article .text-with-image img {
+  max-width: 200px;
+  max-height: 200px;
+  float: left;
+  margin: 0 20px;
+}
+.article .text-with-image p {
+  padding: 0 20px 20px;
+  text-align: left;
+  line-height: 1.5em;
+}
+.article .text-with-image h4 {
+  font-family: Lora, sans-serif;
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding: 10px;
+  -moz-text-align-last: left;
+       text-align-last: left;
+}
+.article .calltoaction h3,
+.article .links h3 {
+  padding: 20px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px black;
+}
+.article .calltoaction p,
+.article .links p {
+  padding: 0 20px 20px;
+  text-align: left;
+  line-height: 1.5em;
+}
+.article .calltoaction ul,
+.article .links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 20px;
+}
+.article .calltoaction ul li,
+.article .links ul li {
+  padding: 0 20px;
+}
+.article .calltoaction ul li i,
+.article .links ul li i {
+  margin-right: 5px;
+}
+.article .calltoaction ul a,
+.article .links ul a {
+  font-weight: bold;
 }/*# sourceMappingURL=articles.css.map */
